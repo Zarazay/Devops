@@ -17,5 +17,5 @@
 Запустить его и проверить
 > sh playbook.sh
 > curl http://192.168.1.18 -H 'Host: first.com'
->
+
 > Результат - result.jpg
