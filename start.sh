@@ -1,1 +1,1 @@
-ansible-playbook ./playbook.yml -i ./inventory.ini --diff --ask-become-pass
+ansible-playbook ./playbook.yml -i ./conf.ini --diff --ask-become-pass
