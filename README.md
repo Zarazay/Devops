@@ -7,16 +7,16 @@
 > sudo apt install ansible
 
 Сначала нужно в сетевых настройках выставить два адаптера: 
-- 1. Виртуальный адаптер хоста,
-- 2. NAT
+- Виртуальный адаптер хоста,
+- NAT
 Сгенерировать и установить ключ
 > ssh-keygen -t rsa
 > cat .ssh/id_rsa > ./ssh/authorized_keys
 
-- создать .yml и .html
+Создать .yml и .html
 > mkdir lb
 > touch playbook.yml
 > touch index.html
-- настроить правила проброса портов
-- запустить yaml скрипт
+Настроить правила проброса портов
+Запустить yaml скрипт
 > sudo ansible-playbook playbook.yml
