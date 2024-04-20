@@ -14,5 +14,8 @@
 Создать исполняемый shell файл для запуска плейбука с заданными параметрами
 > ansible-playbook ./playbook.yml -i ./conf.ini --diff --ask-become-pass
 
-Запустить его
+Запустить его и проверить
 > sh playbook.sh
+> curl http://192.168.1.18 -H 'Host: first.com'
+>
+> Результат - result.jpg
