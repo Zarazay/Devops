@@ -6,10 +6,10 @@
 
 ### Порядок выполнения работы
 
-
-
-Установить ансибл:
-> sudo apt install ansible
+Поднятие minikube (С уже установленным docker):
+> curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+> sudo dpkg -i minikube_latest_amd64.deb
+> minikube start
 
 Выставить в сетевых настройках два адаптера: 
 - Виртуальный адаптер хоста,
