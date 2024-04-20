@@ -1,20 +1,20 @@
+### Задание
+Создать плейбук для сканирования запрошенных серверов при помощи nmap
+
 ### Порядок выполнения работы
-Установить ансибл:
-> sudo apt install ansible
+> sudo apt install nmap
 
-Выставить в сетевых настройках два адаптера: 
-- Виртуальный адаптер хоста,
-- NAT
+Создать invntory.ini с id и паролем (сменил виртуалку, ssh по паролю)
+> touch inventory.ini
+> cat >> inventory.ini
 
-Сгенерировать и установить ключ
-> ssh-keygen -t rsa
-> cat .ssh/id_rsa > ./ssh/authorized_keys
+Создать плейбук
+> touch pb_nmap.yml
 
-Создать .yml и .html
-> mkdir lb
-> touch playbook.yml
-> touch index.html
+Создать файл со сканируемыми серверами
+> touch targets.txt
 
-Настроить правила проброса портов
-Запустить yaml скрипт
-> sudo ansible-playbook playbook.yml
+Выполнить плейбук
+> ansible-playbook pb_nmap.yml -i inventory.ini --diff
+
+Результат представлен в result.jpg
