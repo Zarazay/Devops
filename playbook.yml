@@ -1,17 +1,10 @@
----
-- name: Install nginx and index
-  hosts: localhost
-  become: true
-  become_method: su
-  
-  tasks:
-  - name: install nginx
-    apt:
-      name: nginx
-      state: present
-      
-  - name: copy index
-    copy:
-      src: index.html
-      dest: /var/www/html/index.html
-      mode: '0644'
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-kuber-2
+spec:
+  containers:
+  - name: app-kuber-container
+    image: bohovets/kuber
+    ports:
+    - containerPort: 8000
