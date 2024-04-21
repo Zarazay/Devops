@@ -17,8 +17,9 @@
 
 (result1.jpg)
 
-Создание контейнера:
+Создание deployment и poda c контейнером (Контейнер базовый httpd):
+> nano kuber-pod.yaml
 
+> kubectl apply -f kuber-pod.yaml
 
-nano kuber-pod.yaml
-
+(result2.jpg)
