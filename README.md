@@ -6,14 +6,17 @@
 
 ### Порядок выполнения работы
 
-Поднятие minikube (С уже установленным docker):
-> curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+Поднятие minikube:
 
-> sudo dpkg -i minikube_latest_amd64.deb
+- Включить VT-x/AMD-V
+- Установить Docker и выдать ему права
+> sudo chmod 666 /var/run/docker.sock
+- Установить Kubectl
+- Создать кластер
 > minikube start
 
+(result1.jpg)
+
+Создание контейнера:
 
 
-Настроить правила проброса портов
-Запустить yaml скрипт
-> sudo ansible-playbook playbook.yml
