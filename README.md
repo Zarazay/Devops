@@ -17,7 +17,7 @@
 
 (result1.jpg)
 
-Создание deployment и poda c контейнером (Контейнер базовый httpd):
+Создание deployment и poda c контейнером (Контейнер базовый тестовый httpd):
 > nano kuber-pod.yaml
 
 > kubectl apply -f kuber-pod.yaml
