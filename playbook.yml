@@ -7,4 +7,4 @@ spec:
   - name: app-kuber-container
     image: bohovets/kuber
     ports:
-    - containerPort: 8000
+    - containerPort: 80
